@@ -43,6 +43,7 @@ body{
     align-items: center;
     color: var(--color-mkt-gray);
     padding-right: 20px;
+    margin-top: 50px;
 }
 
 #mkt_info :nth-child(1) strong{
@@ -75,7 +76,7 @@ body{
 }
 
 #mkt_info button{
-    margin: 100px 0;
+    margin: 50px 0;
     background-color: var(--color-button-green);
     color: #fff;
     border: none;
@@ -146,6 +147,7 @@ footer p{
         width: 100%;
         left: 20%;
         align-items: initial;
+        margin-top: 0;
     }
         
     #mkt_info :nth-child(1) {
