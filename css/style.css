@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+:root{
+    --color-background: #130912;
+    --color-span-blue:  #4577be;
+    --color-span-green: #43af5b;
+    --color-button-green: #43af5b;
+    --color-mkt-gray: #dfdfdf;
+    --color-mkt-h1: #fff;
+    font-size: 60%; /* controle das medidas rem */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: var(--color-background);
+    height: 100vh;
+    font-size:  1.4rem ;
+}
+
+#banner{
+    display: flex;
+    justify-content: center;
+}
+
+#banner img{
+    height: 50rem;
+}
+
+#container{
+    width: 100vw;
+    max-width: 700px;
+}
+
+#mkt_info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-mkt-gray);
+    padding-right: 20px;
+}
+
+#mkt_info :nth-child(1) strong{
+    color: var(--color-span-blue);
+}
+
+#mkt_info h1{
+    font-size: 25px;
+    color: var(--color-mkt-h1);
+    margin-top: 10px;
+}
+
+#mkt_info h2{
+    font-size: 1.6rem;
+    margin-top: 15px;
+}
+
+#mkt_info :nth-child(4) strong{
+    color: var(--color-span-green);
+}
+
+#mkt_info :nth-child(5){
+    margin-top: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+#mkt_info :nth-child(5) strong{
+    color: var(--color-span-green);
+}
+
+#mkt_info button{
+    margin: 100px 0;
+    background-color: var(--color-button-green);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--color-button-green);
+    width: 300px;
+}
+
+#btn button:hover{
+    cursor: pointer;
+    background-color: #2e743d;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(114, 114, 114);
+    margin-top: 20px;
+}
+
+footer img{
+    width: 100px;
+    height:30px
+}
+
+footer p{
+    max-width: 90%;
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+
+@media (max-width: 699px){
+    :root{
+        font-size: 40%;
+    }
+}
+
+@media (min-width: 1300px){
+    :root{
+        font-size: 54%;
+    }
+    body .container{
+        max-width: 1300px;
+        display: flex;
+    }
+
+    #banner{
+        grid-area: image;
+        display: flex;
+        justify-content: initial;
+        margin: 0;
+    }
+    #banner img{
+        height: 100vh;
+        
+    }
+
+    #mkt_info{
+        position: relative;
+        grid-area: infos;
+        top: 25%;
+        width: 100%;
+        left: 20%;
+        align-items: initial;
+    }
+        
+    #mkt_info :nth-child(1) {
+    font-size:  20px ;
+        
+    }
+
+    #mkt_info h1{
+        font-size: 42px;
+        color: var(--color-mkt-h1);
+        margin-top: 25px;
+    }
+
+    #mkt_info h2{
+        font-size: 20px;
+        margin-top: 35px;
+    }
+
+    #mkt_info :nth-child(5){
+        margin-top: 35px;
+        font-size: 20px;
+        width: 100%;
+        text-align: left;
+    }
+
+    #mkt_info :nth-child(5) strong{
+        color: var(--color-span-green);
+    }
+
+    #mkt_info button{
+        margin: 45px 0;
+        font-size: 22px;
+        width: 500px;
+        text-align: center;
+    }
+ 
+    footer{
+        margin-top: 80px;
+    }
+
+    footer p{
+        max-width: 50%;
+       margin-top: 15px;
+    }
+
+
+
+}
+
+
+
